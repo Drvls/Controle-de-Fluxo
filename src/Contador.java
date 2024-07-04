@@ -21,13 +21,12 @@ public class Contador {
     public static void contar(int primeiroParametro, int segundoParametro) throws ParametrosInvalidosException{
         if (primeiroParametro >= segundoParametro) {
             throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro");
-        }else{
-            int parametro = primeiroParametro - segundoParametro;
-
-            for(int i = 0; i < parametro ; i++){
+        }else{ 
+            int parametro = segundoParametro - primeiroParametro;
+            
+            for(int i = 1; i <= parametro ; i++){
                 System.out.println("Imprimindo o número " + i);
             }
         }
-        
     }
 }
