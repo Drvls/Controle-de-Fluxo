@@ -1,5 +1,5 @@
 # Desafio de controle de fluxo
----
+
 Desafio seguindo as seguintes condições:
 - Se você passar os números 12 e 30, logo teremos uma interação (for) com 18 ocorrências para imprimir os números, exemplo: "Imprimindo o número 1", "Imprimindo o número 2" e assim por diante.
 - Se o primeiro parâmetro for MAIOR que o segundo parâmetro, você deverá lançar a exceção customizada chamada de ParametrosInvalidosException com a segunda mensagem: "O segundo parâmetro deve ser maior que o primeiro"
@@ -9,8 +9,3 @@ Desafio seguindo as seguintes condições:
 
 Seguindo as regras do desafio caso insira os números 12 e 30, o programa imprimirá 18 mensagens contando o número de subtração entre o primeiro e segundo número.
 Caso insirá 30 e 12, o programa lançará a exceção customizada.
-
----
-
-Exercício criado por [Gleyson Sampaio](https://github.com/glysns).
-Apresentado no **Santander 2024 - Backend com Java** através da [DIO](dio.me).
