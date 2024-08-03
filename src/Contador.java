@@ -12,21 +12,22 @@ public class Contador {
 
         sc.close();
         try {   // validação
-            contar(primeiroParametro, segundoParametro);
+            if(primeiroParametro <= segundoParametro){
+                contar(primeiroParametro, segundoParametro);
+            } else{
+                throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro");
+            }
         } catch (ParametrosInvalidosException e) {
-            throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro");
+            System.out.println(e.getMessage());
         }
     }
 
-    public static void contar(int primeiroParametro, int segundoParametro) throws ParametrosInvalidosException{
-        if (primeiroParametro >= segundoParametro) {
-            throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro");
-        }else{ 
-            int parametro = segundoParametro - primeiroParametro;
+    public static void contar(int primeiroParametro, int segundoParametro) throws ParametrosInvalidosException{ 
+        int parametro = segundoParametro - primeiroParametro;
             
-            for(int i = 1; i <= parametro ; i++){
-                System.out.println("Imprimindo o número " + i);
-            }
+        for(int i = 1; i <= parametro ; i++){
+            System.out.println("Imprimindo o número " + i);
         }
+        
     }
 }
